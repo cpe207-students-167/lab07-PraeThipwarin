@@ -83,7 +83,7 @@ submitBtn.onclick = () => {
   }
 
   // validate confirm password
-  if (ConPassInput.value !== PassInput.value || ConPassInput.value == "") {
+  if (ConPassInput.value == "" || ConPassInput.value !== PassInput.value) {
     ConPassInput.classList.add("is-invalid");
   } else {
     ConPassInput.classList.add("is-valid");
